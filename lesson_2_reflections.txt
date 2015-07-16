@@ -5,3 +5,23 @@ A .git file is added and now you can use git commands on the file. There are ini
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area is an intermediate stage before committing the working directory into the repository. It allows for time to make decisions before  actually committing the working directory.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+The staging area can let you just change one file and commit that logical change. You make sure you want to commit that change with git diff and git diff -staged.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches could help programmers try out experiments with the code (e.g. creating an easy mode, changing the language). This doesn't affect the master branch, which is good. There is always a working copy of the code.
+
+How do the diagrams help you visualize the branch structure?
+
+They help to create a picture of which branch/commit I am actually working on and where changes are being made.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together allows changes to be updated in the master branch. We represent it in the diagram the way we do because the master branch can still access the commits from both branches.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging allows for programmers to work together to see what part of the code needs to be kept when merging two different branches. Everything that is the same between two files is kept, but different parts of the files are sometimes kept.
